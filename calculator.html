@@ -6,34 +6,47 @@
     <link rel="stylesheet" href="calculator.css" />
     <title>Document</title>
 </head>
+
 <body>
+    <header><h1>Calculator</h1></header>
+        
+    <table>
+        <tr>
+        <td><input type="text" id="num" readonly></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="num('1')">1</button></td>
+            <td><button onclick="num('2')">2</button></td>
+            <td><button onclick="num('3')">3</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="num('4')">4</button></td>
+            <td><button onclick="num('5')">5</button></td>
+            <td><button onclick="num('6')">6</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="num('7')">7</button></td>
+            <td><button onclick="num('8')">8</button></td>
+            <td><button onclick="num('9')">9</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="num('0')">0</button></td>
+            <td><button onclick="Clear()">C</button></td>
+            <td><button onclick="num('+')">+</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="num('-')">-</button></td>
+            <td><button onclick="num('*')">*</button></td>
+            <td><button onclick="num('/')">/</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button onclick="Calculate()">=</button></td>
+            <td><button onclick="num('.')">.</button></td>
+        </tr>
+    </table>
 
-<div>
+    <script src="calculator.js"></script>
 
-    <button class="button"> 0 </button>
-    <button class="button"> 3 </button>
-    <button class="button"> 6 </button>
-    <button class="button4"> 9 </button>
-</div>
-<div>
-    <button class="button"> 1 </button>
-    <button class="button2"> 4 </button>
-    <button class="button2"> 7 </button>
-    <button class="button2"> = </button>
-</div>
-<div>
+</body>
 
-    <button class="button3"> 2 </button>
-    <button class="button3"> 5 </button>
-    <button class="button3"> 8 </button>
-    <button class="button"> % </button>
-</div>
-<div>
-    <button class="button5"> c </button>
-    <button class="button5"> X </button>
-    <button class="button5"> + </button>
-    <button class="button5"> - </button>
-</div>
-
-    <script type="text/javascript" src="calculator.js"></script>
 </html>
